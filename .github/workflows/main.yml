@@ -10,7 +10,7 @@ jobs:
   #  [config do sistema operacional] (mac/windows/linux/etc)
       runs-on: ubuntu-latest
 
-  # [variaveis] (de ambiente, chaves de acesso)
+      # [variaveis] (de ambiente, chaves de acesso)
   env:
       API_BASE_URL: 'http://localhost:3000'
       PORT: 4000
