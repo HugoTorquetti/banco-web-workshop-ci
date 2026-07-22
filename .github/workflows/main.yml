@@ -20,16 +20,16 @@ jobs:
             uses: actions/checkout@v6.1.0
         #  [dependencias do projeto] (node/npm, java/maven, python/pip)
     
-        - name: Instalando deps do projeto
-          run: npm install
-    
-        - name: Iniciando servidor de mock
-          run: npm run mock-server &
-    
-        - name: Iniciando servidor da aplicação
-          run: npm run server
-        
-        #  [acoes para verificar regras/politicas] (cobertura de codigo, formatacao, testes ui/e2e/unit/etc.)
-    
-        - name: Executando os testes e2e do projeto
-          run: npx cypress run
+          - name: Instalando deps do projeto
+            run: npm install
+      
+          - name: Iniciando servidor de mock
+            run: npm run mock-server &
+      
+          - name: Iniciando servidor da aplicação
+            run: npm run server &
+          
+          #  [acoes para verificar regras/politicas] (cobertura de codigo, formatacao, testes ui/e2e/unit/etc.)
+      
+          - name: Executando os testes e2e do projeto
+            run: npx cypress run
