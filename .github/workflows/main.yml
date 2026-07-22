@@ -8,7 +8,7 @@ on:
 jobs:
   tests: 
   #  [config do sistema operacional] (mac/windows/linux/etc)
-  runs on: ubuntu-latest
+      runs-on: ubuntu-latest
 
   # [variaveis] (de ambiente, chaves de acesso)
   env:
